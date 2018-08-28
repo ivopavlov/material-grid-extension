@@ -1,0 +1,26 @@
+{
+  "name": "Material grid",
+  "description": "Add grid overlay to a web page",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js", "grid.js"],
+    "persistent": false
+  },
+
+
+  "content_scripts": [
+     {
+       "matches": ["http://*/*", "https://*/*"],
+       "css": ["background.css"]
+     }
+   ],
+
+  "web_accessible_resources": ["background.css"],
+  "browser_action": {
+    "default_title": "Material grid"
+  },
+  "manifest_version": 2
+}

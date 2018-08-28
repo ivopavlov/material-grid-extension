@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: 9999999;
+  cursor: pointer;
+  pointer-events: none;
+  display: flex;
+  flex: 1;
+}
+
+.margin {
+  width: 24px;
+  height: 100%;
+  background-color: #A4F8D4;
+}
+
+@media (max-width: 719px) {
+  .margin {
+    width: 16px;
+  }
+}
+
+div[id^="col-container-"] {
+  background-color: #FFD7E5;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+@media (max-width: 599px) {
+  #col-container-5, #col-container-6,
+  #col-container-7, #col-container-8,
+  #col-container-9, #col-container-10,
+  #col-container-11, #col-container-12 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 839px) {
+  #col-container-9, #col-container-10,
+  #col-container-11, #col-container-12 {
+    display: none;
+  }
+}
+
+.gutter {
+  width: 16px;
+  height: 100%;
+  background-color: #A3F8FE;
+}
+
+@media (max-width: 719px) {
+  .gutter {
+    width: 8px;
+  }
+}
