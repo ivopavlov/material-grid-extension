@@ -17,13 +17,13 @@ chrome.browserAction.onClicked.addListener(function(tab) {
         var colContainer = document.createElement("div");
         colContainer.id = "col-container-" + i;
 
-        var gutter = document.createElement("div");
-        gutter.classList.add("gutter");
-        colContainer.appendChild(gutter);
-
         var column = document.createElement("div");
         column.classList.add("column");
         colContainer.appendChild(column);
+
+        var gutter = document.createElement("div");
+        gutter.classList.add("gutter");
+        colContainer.appendChild(gutter);
 
         div.appendChild(colContainer);
       }

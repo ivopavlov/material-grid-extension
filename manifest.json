@@ -6,7 +6,7 @@
     "activeTab"
   ],
   "background": {
-    "scripts": ["background.js", "grid.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
 
