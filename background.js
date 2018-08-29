@@ -22,7 +22,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
         colContainer.appendChild(column);
 
         var gutter = document.createElement("div");
-        gutter.classList.add("gutter");
+        gutter.classList.add("gutter", "gutter-"+i);
         colContainer.appendChild(gutter);
 
         div.appendChild(colContainer);
